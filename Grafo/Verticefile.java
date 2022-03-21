@@ -1,5 +1,5 @@
 package Grafo;
-
+import Grafo.vertice;
 import java.io.File;
 import java.util.Scanner;
 
@@ -15,13 +15,21 @@ public class Verticefile {
         }
     }
 
-    public void readFile(){
+    public void readFile(vertice[] vet){
+        int count=0;
         while(x.hasNext()){
-            String a = x.next();
-            String b = x.next();
-        
-            System.out.println("O id é "+a+" e seu nome é "+b);
+
+            vet[count].identificador = Integer.parseInt(x.next());
+            vet[count].nome = x.next();
+            if(count==6){
+                return;
+            }
+            count++;
         }
+    }
+
+    private int parseInt(String next) {
+        return 0;
     }
 
     public void closeFile(){
