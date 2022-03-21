@@ -1,10 +1,10 @@
-package Grafo;
+package Grafo.Objects;
 
 public class aresta {
-    int id;
-    int origem;
-    int destino;
-    double peso;
+    public int id;
+    public int origem;
+    public int destino;
+    public double peso;
 
   public void setId(int id){
       this.id = id;

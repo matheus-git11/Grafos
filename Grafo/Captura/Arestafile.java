@@ -1,7 +1,9 @@
-package Grafo;
+package Grafo.Captura;
 
 import java.io.File;
 import java.util.Scanner;
+
+import Grafo.Objects.aresta;
 
 public class Arestafile {
     private Scanner y;
@@ -9,7 +11,7 @@ public class Arestafile {
 
     public void openFile(){
         try{
-            y = new Scanner(new File("/Users/Matheus/.vscode/Grafos/Grafo/arestas.txt"));
+            y = new Scanner(new File("/Users/Matheus/.vscode/Grafos/Grafo/text/arestas.txt"));
         }catch(Exception e){
             System.out.println("Not finding the file");
         }

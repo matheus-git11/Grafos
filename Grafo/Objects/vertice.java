@@ -1,8 +1,8 @@
-package Grafo;
+package Grafo.Objects;
 
 public class vertice {
-    String nome;
-    int identificador;
+    public String nome;
+    public int identificador;
 
 
  public void setNome(String nome) {
